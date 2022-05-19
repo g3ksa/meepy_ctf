@@ -1,0 +1,25 @@
+@import 'static';
+
+.map__row{
+	background-color: var(--bg-block);
+	border-radius: $borderRadius;
+	padding: 2rem;
+	margin-top: 20px;
+	transition: background-color 0.5s
+}
+
+.map__title{
+	font-size: $fzTitle;
+	text-align: center;
+	margin-bottom: 50px;
+	font-weight: bold;
+}
+
+#map{
+	width: 100%;
+	height: 60vh;
+}
+
+.map__item ymaps{
+	border-radius: $borderRadius;
+}

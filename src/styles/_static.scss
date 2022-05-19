@@ -1,0 +1,19 @@
+$borderRadius: 10px;
+$fzTitle: 2.5rem;
+$activeLink: #d8aaaa;	
+
+:root.light{
+	--bg-block: rgb(220, 220, 220);
+	--bg-body: #fff;
+	--fc-main: #17171a;
+	--scroll-track: #C8C8C8;
+	--bg-theme: linear-gradient(90deg, rgba(216,170,170,1) 0%, rgba(107,85,255,1) 100%);
+}
+
+:root.dark{
+	--bg-block: #252528;
+	--bg-body: #17171a;
+	--fc-main: rgb(220, 220, 220);
+	--scroll-track: #252528;
+	--bg-theme: linear-gradient(90deg, rgba(216,170,170,1) 0%, rgba(107,85,255,1) 100%);
+}
