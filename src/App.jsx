@@ -7,7 +7,6 @@ import { Sources } from './pages/sources/Sources';
 import { Stats } from './pages/stats/Stats';
 import { Team } from './pages/team/Team';
 import { Layout } from './components/Layout';
-import { Tasks } from './pages/tasks/Tasks';
 import { Flag } from './components/Flag';
 import { NotAdmin } from './components/NotAdmin';
 import { Admin } from './components/Admin';
@@ -34,10 +33,6 @@ const App = () => {
 				<Routes>
 					<Route path="/" element={<Layout />}>
 						<Route index element={isAdmin()} />
-						<Route path="sources" element={<Sources />} />
-						<Route path="stats" element={<Stats />} />
-						<Route path="team" element={<Team />} />
-						<Route path="tasks" element={<Tasks />} />
 						<Route path="login" element={<Login />} />
 					</Route>
 				</Routes>
