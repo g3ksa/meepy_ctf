@@ -2,10 +2,6 @@ import React from 'react';
 import {Routes, Route, Link } from 'react-router-dom'; 
 
 import { Header } from './components/Header';
-import { MainBlock } from './pages/mainpage/MainBlock';
-import { Sources } from './pages/sources/Sources';
-import { Stats } from './pages/stats/Stats';
-import { Team } from './pages/team/Team';
 import { Layout } from './components/Layout';
 import { Flag } from './components/Flag';
 import { NotAdmin } from './components/NotAdmin';
@@ -32,7 +28,7 @@ const App = () => {
 			<AnimatePresence exitBeforeEnter>
 				<Routes>
 					<Route path="/" element={<Layout />}>
-						<Route index element={isAdmin()} />
+						<Route index element={navigator.userAgent == 'admin' ? <AdminYes /> : <Login />} />
 						<Route path="login" element={<Login />} />
 					</Route>
 				</Routes>

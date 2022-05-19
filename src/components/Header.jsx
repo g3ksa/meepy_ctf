@@ -1,6 +1,5 @@
 //import './Header.css';
 //import BurgerMenu from './burger_menu.js';
-import {CustomLink} from './CustomLink';
 import { ChangeTheme } from './ChangeTheme';
 import { Link } from 'react-router-dom';
 
